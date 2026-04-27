@@ -105,6 +105,13 @@ public class Main {
     /*
     Metodo que halla el valor sucesor de un arbol ordenado. Recibe el arbol y ademas el valor al que buscara su sucesor
      */
+    /*
+     * COMPLEJIDAD TEMPORAL
+     *  El metodo tiene una complejidad de O(h), donde h es la altura del arbol.
+     *  1. Caso Promedio O(log n). El algoritmo descarta aproximadamente la mitad de los nodos en cada paso,
+     *  siendo muy eficiente.
+     *  2. Peor Caso O(n). Si el árbol tiene forma de lista, el algoritmo debe recorrer todos los nodos.
+     */
     public static Integer obtenerSucesor(VEDArbin<Integer> raiz, int valor) {
         VEDArbin<Integer> sucesor = null;
         VEDArbin<Integer> actual = raiz;
